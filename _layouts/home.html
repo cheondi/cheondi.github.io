@@ -22,32 +22,32 @@ layout: default
             {{ post.categories | escape }}
           </a>
         </h2>
-        {% if post.category == "projectA" %}
+        {% if post.categories[0] == "projectA" %}
         <div class="post-image">
           <img src="/type/projectA.png" class="author-avatar u-photo align-center" alt="{{ site.author }}">
         </div>
         {% endif %}
-        {% if post.category == "projectB" %}
+        {% if post.categories[0] == "projectB" %}
         <div class="post-image">
           <img src="/type/projectB.png" class="author-avatar u-photo align-center" alt="{{ site.author }}">
         </div>
         {% endif %}
-        {% if post.category == "update" %}
+        {% if post.categories[0] == "update" %}
         <div class="post-image">
           <img src="/type/mess.png" class="author-avatar u-photo align-center" alt="{{ site.author }}">
         </div>
         {% endif %}
-        {% if post.category == "mess" %}
+        {% if post.categories[0] == "mess" %}
         <div class="post-image">
           <img src="/type/mess.png" class="author-avatar u-photo align-center" alt="{{ site.author }}">
         </div>
         {% endif %}
-        {% if post.category == "etc"%}
+        {% if post.categories[0] == "etc"%}
         <div class="post-image">
           <img src="/type/etc.png" class="author-avatar u-photo align-center" alt="{{ site.author }}">
         </div>
         {% endif %}
-        {% if post.category == "algorithm" %}
+        {% if post.categories[0] == "algorithm" %}
         <div class="post-image">
           <img src="/type/algorithm.png" class="author-avatar u-photo align-center" alt="{{ site.author }}">
         </div>
