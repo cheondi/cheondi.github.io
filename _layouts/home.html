@@ -19,7 +19,7 @@ layout: default
       <li>
         <h2>
           <a href="{{ post.url | relative_url }}">
-            {{ post.categories | escape }}
+            {{ post.title | escape }}
           </a>
         </h2>
         {% if post.categories[0] == "projectA" %}
