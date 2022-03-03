@@ -86,8 +86,10 @@ layout: default
     </nav>
   </footer>
 
-  {% if page.comments != false and jekyll.environment == "production" and site.disqus %}
-    {% include disqus.html %}
+  {% if page.comments %} 
+    <div id="post-disqus" class="container"> 
+      {% include disqus.html %} 
+    </div> 
   {% endif %}
   
 </article>

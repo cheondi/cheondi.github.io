@@ -2,13 +2,21 @@
   url: /about/
 - title: Years
   url: /years/
-- title: Categories
-  url: /categories/
+- title: Updates
+  url: /updates/
+- title: Projects
+  sublinks:
+    - title: Project A
+      url: /A/
+    - title: Project B
+      url: /B/
+    - title: 엉망진창 가로세로
+      url: /mess/
 - title: Tags
   url: /tags/
 - title: More
   sublinks:
-    - title: FAQ
-      url: /faq/
-    - title: Docs
-      url: /docs/
+    - title: Algorithm
+      url: /algorithm/
+    - title: 낙서
+      url: /etc/

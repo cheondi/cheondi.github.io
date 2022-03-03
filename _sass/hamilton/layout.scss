@@ -41,16 +41,24 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-family: $handwriting-font-family;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  padding-left: 10px ;
+  padding-top: 6px;
 
   @include media-query($on-small) {
     float: center;
   }
+  
 }
-
+.icon2{
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  float: left;
+  margin-top: 1%;
+}
 .site-nav {
   position: absolute;
   top: 12px;
@@ -129,6 +137,7 @@
 
   .current-page {
     text-decoration: line-through;
+    color: red;
   }
 
   @media screen and (min-width: $on-medium) {
@@ -199,6 +208,11 @@
 .site-sidebar {
   padding: $spacing-unit;
   border-right: 1px solid;
+  width: 200px;
+  position: relative;
+  font-size: 18px;
+  left: -30px;
+  height: 909px;
   @include relative-font-size(0.8);
 
   @include media-query($on-medium) {
@@ -217,6 +231,7 @@
   }
 }
 
+
 .sidebar-section {
   padding-bottom: $spacing-unit / 2;
   border-bottom: 1px solid;
@@ -227,8 +242,23 @@
     border-bottom: 0;
     margin-bottom: 0;
   }
+  .link_item{
+    font-size: 21px;
+    color: rgb(100, 62, 11);
+  }
+  .link_sub_item{
+    font-size: 18px;
+  }
+  .link_tit{
+    font-size: 23px;
+    color: rgb(11, 100, 58);
+  }
+  ul{
+    list-style:none;
+    padding-left:0px;
+    margin-left: 0px;
+  }
 }
-
 .sidebar-icon {
   margin-right: 0.5em;
 }
@@ -262,9 +292,25 @@ ul.social-icons {
 }
 
 .author-avatar {
-  width: $base-font-size * 8;
+  width: $base-font-size * 4;
   height: auto;
-  border-radius: 50%;
+}
+.author-icon {
+  width: $base-font-size * 4;
+  height: auto;
+  @media (max-width: 600px){ 
+    margin-top: 40%;
+  } 
+  @media (min-width: 600px) and (max-width: 2000px){
+    margin-top: 0%;
+    }
+}
+
+.intro {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  margin: 0;
 }
 
 .toc-title {
@@ -322,7 +368,9 @@ ul.social-icons {
 .site-main {
   flex: 1 0 auto;
   overflow-y: scroll;
-
+  position: relative;
+  font-size: 20px;
+  width: 900px;
   // Hide scrollbar for IE, Edge and Firefox
   -ms-overflow-style: none;  // IE and Edge
   scrollbar-width: none;     // Firefox
@@ -364,14 +412,32 @@ ul.social-icons {
     padding-bottom: $spacing-unit / 2;
     border-bottom: 1px solid;
     margin-bottom: $spacing-unit;
+    height: 80px;
 
     h2 {
       margin-bottom: 0;
+      width: 90%;
+      float: left;
+      letter-spacing: 2px;
+      
+
       @include relative-font-size(1.4);
 
       @media screen and (min-width: $on-large) {
         @include relative-font-size(1.5);
+        
       }
+    }
+    .post-image {
+      float: right;
+      width: 10%;
+    }
+    .post-meta{
+      width: 90%;
+    }
+    .post-category{
+      padding-left: 20%;
+      font-size: 14.4px;
     }
 
     .post-excerpt {
@@ -395,6 +461,7 @@ ul.social-icons {
 
   li {
     float: left;
+    color: red;
     margin: 5px 15px 5px 0;
 
     &:last-of-type { margin-right: 0 }

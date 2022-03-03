@@ -70,6 +70,7 @@ table {
 
 .site-sidebar {
   border-color: $border-color-light;
+  margin:auto;
 }
 
 .site-title {
@@ -83,6 +84,7 @@ table {
 .site-nav {
   background-color: $background-color;
   border-color: $border-color;
+  z-index: 1;
 
   .menu-icon {
     > svg path {
@@ -95,7 +97,7 @@ table {
   }
 
   .dropdown-content {
-    background-color: $border-color-light;
+    background-color: $background-color;
     box-shadow: $dropdown-shadow;
   }
 }
@@ -124,7 +126,7 @@ table {
 
 ul.post-tags {
   li {
-    background-color: $border-color-light;
+    background-color: #cba8a8;
   }
 }
 
