@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 0. 배틀몬스터즈 기획
+categories : [projectA]
 ---
 <br>
 <br>
