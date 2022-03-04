@@ -22,36 +22,6 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h2>
-        {% if post.categories[0] == "projectA" %}
-        <div class="post-image">
-          <img src="/type/projectA.png">
-        </div>
-        {% endif %}
-        {% if post.categories[0] == "projectB" %}
-        <div class="post-image">
-          <img src="/type/projectB.png">
-        </div>
-        {% endif %}
-        {% if post.categories[0] == "update" %}
-        <div class="post-image">
-          <img src="/type/mess.png">
-        </div>
-        {% endif %}
-        {% if post.categories[0] == "mess" %}
-        <div class="post-image">
-          <img src="/type/mess.png">
-        </div>
-        {% endif %}
-        {% if post.categories[0] == "etc"%}
-        <div class="post-image">
-          <img src="/type/etc.png">
-        </div>
-        {% endif %}
-        {% if post.categories[0] == "algorithm" %}
-        <div class="post-image">
-          <img src="/type/algorithm.png">
-        </div>
-        {% endif %}
         <p class="post-meta">
           <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
             {{ post.date | date: date_format }}
