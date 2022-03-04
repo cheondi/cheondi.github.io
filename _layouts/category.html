@@ -3,14 +3,6 @@ layout: default
 ---
 
 <div class="home">
-  <meta name="google-site-verification" content="cw1HhF-k904YLIpNyWnu4ZXWIWlKR5T4rZT9zZ0CitA" />
-  {{ content }}
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
 
   {%- if posts.size > 0 -%}
     <ul class="post-list">
