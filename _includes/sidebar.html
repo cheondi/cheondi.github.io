@@ -51,12 +51,3 @@
     </ul>
   </div>
 {%- endif %}
-<div class="sidebar-section">
-  <div class="col-lg-4 col-md-2">
-    <ul>
-      {% for category in site.categories %}
-      <li>{{ category | fist }} ({{category | last | size}})</li>
-      {% endfor %}
-    </ul>
-  </div> 
-  </div>
