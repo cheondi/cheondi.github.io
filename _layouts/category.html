@@ -5,7 +5,7 @@ layout: default
 <div class="category">
   <meta name="google-site-verification" content="cw1HhF-k904YLIpNyWnu4ZXWIWlKR5T4rZT9zZ0CitA" />
 <ul class="post-list">
-    {%- for post in posts -%}
+    {%- for post in site.posts -%}
     <li>
         <h2>
             <a href="{{ post.url | relative_url }}">
