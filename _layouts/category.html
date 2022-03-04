@@ -3,8 +3,15 @@ layout: default
 ---
 
 <div class="home">
-<a>{{ page.category }}</a>
-<a>{{ posts.size }}</a>
+  <meta name="google-site-verification" content="cw1HhF-k904YLIpNyWnu4ZXWIWlKR5T4rZT9zZ0CitA" />
+  {{ content }}
+
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
   {%- if posts.size > 0 -%}
     <ul class="post-list">
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
@@ -12,7 +19,7 @@ layout: default
       <li>
         <h2>
           <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }},{{ post.category }},{{ page.category }}
+            {{ post.title | escape }}
           </a>
         </h2>
         {% if post.categories[0] == "projectA" %}
