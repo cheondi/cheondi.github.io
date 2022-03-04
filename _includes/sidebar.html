@@ -52,7 +52,7 @@
 
 <div class="sidebar-section">
   <ul>
-    {% for category in site.categories %}
+    {% for category in post.categories %}
     <li>{{ category | fist }} ({{category | last | size}})</li>
     {% endfor %}
   </ul>
