@@ -32,13 +32,11 @@
   </ul>
 </div>
 
-{% if site.subscribe != false -%}
-<div class="sidebar-section feed-subscribe">
-  <a href="{{ 'feed.xml' | relative_url }}">
-    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
-  </a>
+<div class="sidebar-section">
+  <ul class="intro">
+    <a class="introduce" href="https://cheondi.github.io/about/"> 게임 개발자 cheondi입니다.<br> 현재 Unity를 이용해 개발한 "엉망진창 가로세로"를 라이브 운영 중입니다.</br></a>
+  </ul>
 </div>
-{%- endif %}
 
 {% if site.data.social -%}
   <div class="sidebar-section">
@@ -51,3 +49,90 @@
     </ul>
   </div>
 {%- endif %}
+<div class="sidebar-section">
+<div class="col-lg-4 col-md-2">
+  <ul>
+    {% for category in site.categories %}
+    <li>{{ category | fist }} ({{category | last | size}})</li>
+    {% endfor %}
+  </ul>
+</div> 
+</div>
+<!-- 
+<div class="sidebar-section">
+  <ul class="tt_category">
+    <li class="">
+      <a class="link_tit">
+        카테고리
+      </a>
+      <ul class="category_list">
+        <li class="">
+          <a class="link_item" >
+            프로그래밍
+          </a>
+          <ul class="sub_category_list">
+            <li class="">
+              <a class="link_sub_item"
+                href="" >
+                ↳	유니티
+              </a>
+            </li>
+            <li class="">
+              <a class="link_sub_item"
+                href="">
+                ↳	알고리즘
+
+              </a>
+            </li>
+            <li class="">
+              <a class="link_sub_item"
+                href="">
+                ↳	기타
+              </a>
+            </li>
+          </ul>
+
+        </li>
+        <li class="">
+          <a class="link_item" >
+            프로젝트
+          </a>
+          <ul class="sub_category_list">
+            <li class="">
+              <a class="link_sub_item"
+                href="">
+                ↳	ProjectA
+              </a>
+            </li>
+            <li class="">
+              <a class="link_sub_item" href="">
+                ↳	ProjectB
+              </a>
+            </li>
+            <li class="">
+              <a class="link_sub_item"
+                href="">
+                ↳	엉망진창 가로세로 Live
+
+              </a>
+            </li>
+          </ul>
+
+        </li>
+        <li class="">
+          <a class="link_item" >
+            기타
+          </a>
+          <ul class="sub_category_list">
+            <li class="">
+              <a class="link_sub_item"
+                href="">
+                ↳	그림
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div> -->
