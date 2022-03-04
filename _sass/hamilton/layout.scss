@@ -27,6 +27,8 @@
   text-align: center;
   font-weight: bold;
   font-family : $headline-font-family;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .site-sidebar-button {
   position: absolute;
@@ -417,7 +419,7 @@ ul.social-icons {
     padding-bottom: $spacing-unit / 2;
     border-bottom: 1px solid;
     margin-bottom: $spacing-unit;
-    height: 80px;
+    height: 100px;
 
     h2 {
       margin-bottom: 0;
