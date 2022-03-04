@@ -4,6 +4,8 @@ layout: default
 
 <div class="home">
   <meta name="google-site-verification" content="cw1HhF-k904YLIpNyWnu4ZXWIWlKR5T4rZT9zZ0CitA" />
+  
+  <h2>{{ page.category}}</h2>
   {{ content }}
 
   {% if site.paginate %}
@@ -14,13 +16,6 @@ layout: default
 
   {%- if posts.size > 0 -%}
     <ul class="post-list">
-        <li>
-            <h2>
-              <a href="{{ post.url | relative_url }}">
-                {{ page.category | escape }}
-              </a>
-            </h2>
-        </li>
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
       <li>
