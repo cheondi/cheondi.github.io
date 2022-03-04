@@ -22,7 +22,12 @@
     display: flex;
   }
 }
-
+.category-name{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family : $headline-font-family;
+}
 .site-sidebar-button {
   position: absolute;
   top: 3px;
