@@ -16,7 +16,7 @@ layout: default
     <ul class="post-list">
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      {% if post.categories[0] == site.categoies[page.category] %}
+      {% if post.categories[0] == site.categories[page.category] %}
       <li>
         <h2>
           <a href="{{ post.url | relative_url }}">
