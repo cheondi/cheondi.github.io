@@ -53,7 +53,7 @@
 <div class="sidebar-section">
   <ul>
     {% for category in site.categories %}
-    <li>{{ category.title }}</li>
+    <li>{{ category | first }}</li>
     {% endfor %}
   </ul>
 </div>
