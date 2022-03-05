@@ -22,14 +22,6 @@
     display: flex;
   }
 }
-.category-name{
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  font-family : $headline-font-family;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
 .site-sidebar-button {
   position: absolute;
   top: 3px;
@@ -249,16 +241,12 @@
     border-bottom: 0;
     margin-bottom: 0;
   }
-  .link_item{
+  .category-name{
     font-size: 21px;
     color: rgb(100, 62, 11);
   }
-  .link_sub_item{
+  .category-item{
     font-size: 18px;
-  }
-  .link_tit{
-    font-size: 23px;
-    color: rgb(11, 100, 58);
   }
   ul{
     list-style:none;
