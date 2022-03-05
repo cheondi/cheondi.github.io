@@ -140,3 +140,22 @@
       }
   })
 </script>
+<div id="box">
+  <li class="main">
+      test
+      <ul class="sub" style="display:none">
+          <li>test1</li>
+          <il>test2</il>
+      </ul>
+  </ul>
+</div>
+<script>
+  $(".main").click(function(){
+      if($(".sub").is(":visible")){
+          $(".sub").css("display","none");
+      }
+      else{
+          $(".sub").css("display","block");
+      }
+  })
+</script>
