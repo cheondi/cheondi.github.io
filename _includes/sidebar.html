@@ -51,40 +51,33 @@
 {%- endif %}
 
 <div class="sidebar-section">
-  <ul class="category-name">
+  <details>
+  <summary class="category-name">
     프로그래밍
     <li class="category-item">
-    <a href="https://cheondi.github.io/categories/#unity">
+    <p href="https://cheondi.github.io/categories/#unity">
       ↳유니티
-      </a>
+    </p>
     </li>
     <li class="category-item">
-      <a href="https://cheondi.github.io/categories/#unreal">
+      <p href="https://cheondi.github.io/categories/#unreal">
         ↳언리얼엔진
-      </a>
+      </p>
     </li>
     <li class="category-item" >
-      <a href="https://cheondi.github.io/categories/#algorithm">
+      <p href="https://cheondi.github.io/categories/#algorithm">
         ↳알고리즘(C#)
-      </a>
+      </p>
     </li>
     <li class="category-item">
-      <a href="https://cheondi.github.io/categories/#etc">
+      <p href="https://cheondi.github.io/categories/#etc">
         ↳기타
-      </a>
+      </p>
     </li>
-  </ul>
+  </summary>
+</details>
 </div>
-<script>
-    $(".category-name").click(function(){
-        if($(".category-item").is(":visible")){
-            $(".category-item").slideUp();
-        }
-        else{
-            $(".category-item").slideDown();
-        }
-    })
-</script>
+
 <div class="sidebar-section">
   <ul class="category-name">
     개발
@@ -105,16 +98,6 @@
     </li>
   </ul>
 </div>
-<script>
-  $(".category-name").click(function(){
-      if($(".category-item").is(":visible")){
-          $(".category-item").slideUp();
-      }
-      else{
-          $(".category-item").slideDown();
-      }
-  })
-</script>
 <div class="sidebar-section">
   <ul class="category-name">
     기타
@@ -130,32 +113,3 @@
     </li>
   </ul>
 </div>
-<script>
-  $(".category-name").click(function(){
-      if($(".category-item").is(":visible")){
-          $(".category-item").slideUp();
-      }
-      else{
-          $(".category-item").slideDown();
-      }
-  })
-</script>
-<div id="box">
-  <li class="main">
-      test
-      <ul class="sub" style="display:none">
-          <li>test1</li>
-          <il>test2</il>
-      </ul>
-  </ul>
-</div>
-<script>
-  $(".main").click(function(){
-      if($(".sub").is(":visible")){
-          $(".sub").css("display","none");
-      }
-      else{
-          $(".sub").css("display","block");
-      }
-  })
-</script>
