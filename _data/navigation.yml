@@ -10,13 +10,3 @@
       url: /A/
     - title: Project B
       url: /B/
-    - title: 엉망진창 가로세로
-      url: /mess/
-- title: Tags
-  url: /tags/
-- title: More
-  sublinks:
-    - title: Algorithm
-      url: /algorithm/
-    - title: 낙서
-      url: /etc/
