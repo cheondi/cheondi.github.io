@@ -10,7 +10,7 @@ comments : true
 <br>
 <br>
 
-# 메서드 정리
+# Singleton 패턴
 
 <BR>
 
