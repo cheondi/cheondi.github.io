@@ -57,6 +57,11 @@ layout: default
           <img src="/type/designPatterns.png">
         </div>
         {% endif %}
+        {% if post.categories[0] == "graphics" %}
+        <div class="post-image">
+          <img src="/type/graphics.png">
+        </div>
+        {% endif %}
         <p class="post-meta">
           <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
             {{ post.date | date: date_format }}
