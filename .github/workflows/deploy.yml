@@ -2,6 +2,9 @@ name: Deploy private blog source
 
 on:
   workflow_dispatch:
+  schedule:
+    # GitHub Actions cron uses UTC. 00:00 UTC is 09:00 KST.
+    - cron: '0 0 20 8 *'
 
 concurrency:
   group: pages
@@ -13,7 +16,26 @@ permissions:
   id-token: write
 
 jobs:
+  schedule-gate:
+    runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.gate.outputs.deploy }}
+    steps:
+      - name: Allow the one-time scheduled release or a manual deployment
+        id: gate
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [[ "$EVENT_NAME" == "workflow_dispatch" || "$(date -u +%Y-%m-%d)" == "2026-08-20" ]]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
+    needs: schedule-gate
+    if: needs.schedule-gate.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout private source
